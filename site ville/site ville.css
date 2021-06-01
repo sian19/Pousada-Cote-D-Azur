@@ -1,0 +1,428 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "minha fonte";
+}
+
+@font-face{
+	font-family: "minha fonte";
+	src: url("../fonte/OpenSans-Regular.ttf");
+}
+
+html, body{
+	height: 100%;
+}
+
+header{
+	width: 100%;
+	background-color: rgb(214, 214, 214);
+	padding: 10px 2% 30px 2%;
+}
+
+.clear{
+	clear: both;
+}
+
+header .container{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	
+}
+
+.container div:first-of-type{
+	float: left;
+}
+
+.container div:nth-of-type(2){
+	float: right;
+}
+
+.logo img{
+	width: 130px;
+	height: 48px;
+}
+
+section.cover-form{
+	width: 100%;
+	padding: 0 2%;
+}
+
+.bg{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	height: 600px;
+	padding: 15px 0;
+	background-image: url("../images/bg-form.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+
+section.cover-form .container .form-container{
+	float: right;
+	width: 40%;
+	max-width: 400px;
+	height: 100%;
+	margin-right: 40px;
+	background-color: white;
+	box-shadow: 1px 1px 1px 1px rgb(180,180,180);
+	background-color: rgb(137, 144, 156,0.8);
+	border-radius: 15px;
+}
+
+.form-container h2{
+	background-color: rgb(234,236,239,0.7);
+	padding: 25px 15px;
+	font-size: 18px;
+	font-weight: normal;
+	color: black;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+form .input:not(:first-child){
+	margin-top: 40px;
+}
+
+form .input{
+	width: 100%;
+	margin-top: 25px;
+	display: inline-block; /* Tive que usar um display inline block para alterar a terceira classe input */
+	padding-left: 20px;
+	padding-right: 45px; 
+
+}
+
+form .input input{
+	width: 100%;
+	border: 1px solid #ccc;
+	outline: 0;
+	height: 45px;
+	padding-left: 10px;
+}
+
+form .input p{
+	color: rgb(82, 82, 82);
+	padding-bottom: 3px;
+}
+
+form .text p{
+	color: rgb(82,82,82);
+	padding-left: 20px;
+	padding-top: 30px;
+	font-size: 15px;
+}
+
+form .submit{
+	width: 100%;
+	padding-left: 45px;
+	padding-right: 70px;
+	margin-top: 38px;
+}
+
+form .submit input{
+	width: 100%;
+	height: 45px;
+	outline: 0;
+	font-size: 18px;
+	background-color: rgb(3, 59, 80);
+	cursor: pointer;
+	border: 0;
+	color: white;
+}
+
+.cover{
+	width: 100%;
+	padding: 0 2%;
+}
+
+section.chamada{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-top: 15px;
+	padding-bottom: 50px;
+	text-align: center;
+	background-color: rgb(56, 74, 161);
+	
+}
+
+section.chamada h2{
+	width: 90%;
+	max-width: 600px;
+	display: inline-block;
+	font-weight: normal;
+	font-size: 24px;
+	color: white;
+}
+
+section.chamada p{
+	margin-top: 10px;
+	color: white;
+}
+
+.arrow{
+	width: 38px;
+	height: 38px;
+	margin: 0 auto;
+	position: relative;
+	bottom: 35px;
+	border: 2px solid white;
+	border-radius: 300px;
+	background-image: url("../images/arrow.png");
+	background-repeat: no-repeat;
+	background-size: 38px 38px;
+	background-position: center;
+}
+
+main.conteudo{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.wraper{
+	width: 100%;
+	display: flex;
+}
+
+section.seççao{
+	width: 30%;
+	background-color: rgb(235, 242, 255);
+	margin: 1px 0;
+}
+
+section.img{
+	margin: 1px 0;
+}
+
+.wraper:first-child > section.img{
+	width: 70%;
+	height: 350px;
+	background-image: url("../images/mosaico1.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.wraper:nth-of-type(2) > section.img{
+	width: 70%;
+	height: 350px;
+	background-image: url("../images/mosaico2.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.wraper:nth-of-type(3) > section.img{
+	width: 70%;
+	height: 350px;
+	background-image: url("../images/mosaico3.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.wraper:last-child > section.img{
+	width: 70%;
+	height: 350px;
+	background-image: url("../images/mosaico4.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+section.seççao p{
+	padding: 0 5%;
+	padding-top: 120px;
+	color: rgb(65, 90, 130);
+	line-height: 28px;
+}
+
+.wraper:nth-of-type(3) > section.seççao p:last-child{
+	padding-top: 0;
+	font-size: 13px;
+	color: rgb(73, 87, 112);
+	font-weight: bold;
+}
+
+.wraper:last-child > section.seççao p:nth-of-type(2), 
+.wraper:last-child > section.seççao p:last-child{
+	padding-top: 0;
+}
+
+.wraper:last-child > section.seççao p:last-child{
+	color: rgb(73, 87, 112);
+	font-weight: bold;
+	font-size: 13px;
+}
+
+article.artigo{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color: rgb(213, 222, 237);
+	text-align: center;
+	padding: 0 2%;
+	padding-bottom: 30px;
+}
+
+article.artigo h4{
+	padding-top: 45px;
+	padding-bottom: 20px;
+	color: rgb(73, 87, 112);
+	letter-spacing: 2px;
+}
+
+article.artigo .text{
+	width: 100%;
+}
+
+article.artigo .text p{
+	display: inline;
+	border-bottom: 2px solid rgb(65, 90, 130);
+	color: rgb(65, 90, 130);
+	line-height: 32px;
+	letter-spacing: 0.3px;
+}
+
+footer{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 30px 2%;
+}
+
+footer div span{
+	color: rgb(104, 112, 125);
+}
+
+footer div img{
+	width: 110px;
+	margin-top: 20px;
+}
+
+@media screen and (max-width: 900px){
+	section.cover-form .container .form-container{
+		float: none;
+		width: 80%;
+		margin-right: 0;
+		margin: 0 auto;
+		height: auto;
+		padding-bottom: 20px;
+	}
+
+	form .input p{
+		text-align: center;
+	}
+
+	.form-container h2{
+		text-align: center;
+	}	
+
+	.bg{
+		height: auto;
+		padding-top: 25px;
+		padding-bottom: 40px;
+	}
+
+}
+
+@media screen and (max-width: 768px){
+	.wraper:first-child{
+		flex-direction: column;
+	}
+
+	.wraper:nth-of-type(2){
+		flex-direction: column-reverse;
+	}
+
+	.wraper:nth-of-type(3){
+		flex-direction: column;
+	}
+
+	.wraper:last-child{
+		flex-direction: column-reverse;
+	}
+
+	section.seççao{
+		width: 100%;
+		padding: 100px 4%;
+	}
+
+	section.seççao p{
+		padding-top: 0;
+	}
+
+	.wraper:first-child > section.img,
+	.wraper:nth-of-type(2) > section.img,
+	.wraper:nth-of-type(3) > section.img,
+	.wraper:last-child > section.img{
+		width: 100%;
+	}
+
+	section.seççao{
+		text-align: center;
+	}	
+	
+}
+
+@media screen and (max-width: 510px){
+	form .input:first-child{
+		margin-top: 25px;
+	}
+
+	form .input:nth-of-type(2){
+		margin-top: 40px;
+	}
+
+	section.chamada h2{
+		padding: 0 2%;
+	}
+
+	section.chamada p{
+		padding: 0 2%;
+	}
+}
+
+@media screen and (max-width: 510px){
+	.container div:first-of-type{
+		float: none;
+		margin-top: 10px;
+	}
+
+	.container div:nth-of-type(2){
+		float: none;
+		margin-top: 10px;
+	}
+
+	header{
+		text-align: center;
+	}
+
+	form .input{
+		padding: 0 3%;
+		max-width: 350px;
+		margin: 0 auto;
+		display: block;
+	}
+
+	form .input:nth-of-type(2){
+		margin-top: 40px;
+	}
+	
+	form .input:first-of-type{
+		margin-top: 25px;
+	}
+
+	form .submit{
+		max-width: 280px;
+		margin: 0 auto;
+		text-align: center;
+		padding: 0 3%;
+		margin-top: 38px;
+	}
+}
